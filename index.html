@@ -200,8 +200,7 @@
         <div id="header">
             <div id="nav">
                 <ul>
-                    <li><a class="active">HOME</a></li>
-                    <li><a class="" href="index.html">HOME</a></li>
+                    <li><a class="active" href="index.html">HOME</a></li>
                     <li><a class="" href="projects.html">PROJECTS</a></li>
                 </ul>
             </div>
@@ -209,58 +208,11 @@
         <div id="maincontent">
             <div id="content">
                 <div id="column1">
-                    <img src="images/hey.jpg" width="500" style="padding-top: 20px">
-                    <br><br><br>
-                    <h2>The Bohr Diagram and AMU (Atomic Mass)</h2>
-                    <br>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                          <img src="images/bohr.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides fade">
-                          <img src="images/amus.jpg" style="width:100%">
-                        </div>
-                        </div>
-                        <br>
-                        <div style="text-align:center">
-                          <span class="dot"></span> 
-                          <span class="dot"></span> 
-                          <span class="dot"></span> 
-                        </div>
-                        <script>
-                        var slideIndex = 0;
-                        showSlides();
-                        function showSlides() {
-                            var i;
-                            var slides = document.getElementsByClassName("mySlides");
-                            var dots = document.getElementsByClassName("dot");
-                            for (i = 0; i < slides.length; i++) {
-                               slides[i].style.display = "none";  
-                            }
-                            slideIndex++;
-                            if (slideIndex > slides.length) {slideIndex = 1}    
-                            for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                            }
-                            slides[slideIndex-1].style.display = "block";  
-                            dots[slideIndex-1].className += " active";
-                            setTimeout(showSlides, 1500); // Change image every 1.5 seconds
-                            }
-                        </script>              
+                                
                 </div>
-                    <div id="column2">
-                        <h2>WELCOME TO THE WEBSITE OF THE PERIODIC TABLE OF ELEMENTS!</h2>
-                        <p>This website will teach you more about chemistry and how the periodic table of elements works! Not only will this website help you review before your exams or tests, but it will also keep you amused with our super lame, <a href="https://what-if.xkcd.com/archive/">XKCD</a>-inspired jokes and comics for you (all by the amazing Yosra Hashim)!</p>
-                        <br>
-                        <h2>What are Atoms?</h2>
-                        <p>Everything is made up of atoms - indivisable, uncreatable (or destroyable) small particles. Atoms contain protons, neutrons and electrons. Protons and neutrons are located in the nucleus of the atom, while the electrons are found in the shells. Protons have positive charges, neutrons have neutral charges, and electrons have negative charges.</p>
-                        <br>
-                        <h2>What is a Shell?</h2>
-                        <p>As explained earlier, electrons are located in the atom's shells. But what are they? Shells are invisible rings around an atom that contain electrons that orbit the nucleus. It is similar to how the planets orbit the sun. The sun would be the nucleus, the planets would be electrons, and the cycle of the planets' orbit would be the shell!</p>
-                        <br>
-                        <h2>More About the Nucleus...</h2>
-                        <p>Rutherford called the positive particles in the nucleus <i>protons</i>. It was later discovered by Rutherford and James Chadwick, that there is another particle with no charge, also in the nucleus, called the <i>neutron</i>.</p>
-                    </div>
+                <div id="column2">
+                        
+                </div>
             </div>
         </div>
         <br>
