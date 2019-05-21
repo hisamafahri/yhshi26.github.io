@@ -1,15 +1,317 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Yosra Hashim Portfolio</title>
+    <head>
+        <title>Yosra Hashim: Portfolio</title>
+    </head>
+    
     <style>
+        body {
+            font-family: "Kozuka Gothic Pro";
+            font-weight: bold;
+            color: black;
+            background: white;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+        }
 
+        h2 {
+            color: #8fc1e2;
+        }
+
+        #nav {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #5085a5;
+            margin-top: 5px;
+        }
+
+        #nav li {
+            vertical-align: center;
+            float: left;
+            width: 16.66666666666%;
+        }
+
+        #nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            text-decoration: none;
+        }
+
+        #nav li a:hover {
+            background-color: #8fc1e2;
+            color: white;
+        }
+
+        #nav .active {
+            background-color: white;
+            color: black;
+        }
+
+        #footer {
+            background-color: #5085a5;
+            color: white;
+            text-align: center;
+            font-size: 100%;
+        }
+
+        #column1 {
+            width: 40%;
+            float: left;
+            padding-left: 10px;
+        }
+
+        #column2 {
+            width: 57.3%;
+            float: right;
+            margin-right: 20px;
+        }
+
+        #content{
+            height:760px;
+        }
+
+        #column1, #column2 {
+            height: 100%;
+        }
+
+        #column1 h2 {
+            padding: 0px 10px 0px 10px;
+            margin:0px;
+        }
+        #column2 h2,p {
+            padding: 0px 10px 0px 10px;
+            margin: 0px;
+        }
+
+        #column1 p {
+            font-weight: lighter;
+        }
+
+        #column2 p {
+            font-weight: lighter;
+        }
+
+        .list li {
+            padding-left: 10px;
+            width: 100%;
+            font-weight: lighter;
+        }
+
+        .list {
+            padding-bottom: 10px;
+            height: 170px;
+        }
+
+        a {
+            color: #8fc1e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .construction {
+            text-align: center;
+        }
+
+        .construction img {
+            animation: shake 0.5s; 
+            animation-iteration-count: infinite; 
+        }
+
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        .flash {
+           animation-name: flash;
+            animation-duration: 0.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        @keyframes flash {
+            from {color: red;}
+            to {color: black;}
+        }
+
+        #maincontent {
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+
+        .center2 {
+            display: block;
+            margin-left: 20px;
+            margin-top: 20px; 
+            width: 90%;
+        }
+
+        .center3 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #full {
+            display: block;
+            width: 100%;
+        }
+
+        * {box-sizing: border-box;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 1px;
+            width: 1px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
     </style>
-</head>
 
-<body>
+    <body>
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li><a class="active">HOME</a></li>
+                    <li><a class="" href="index.html">HOME</a></li>
+                    <li><a class="" href="projects.html">PROJECTS</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="maincontent">
+            <div id="content">
+                <div id="column1">
+                    <img src="images/hey.jpg" width="500" style="padding-top: 20px">
+                    <br><br><br>
+                    <h2>The Bohr Diagram and AMU (Atomic Mass)</h2>
+                    <br>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <img src="images/bohr.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/amus.jpg" style="width:100%">
+                        </div>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                        <script>
+                        var slideIndex = 0;
+                        showSlides();
 
-</body>
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                               slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 1500); // Change image every 1.5 seconds
+                            }
+                        </script>              
+                </div>
+                    <div id="column2">
+                        <h2>WELCOME TO THE WEBSITE OF THE PERIODIC TABLE OF ELEMENTS!</h2>
+                        <p>This website will teach you more about chemistry and how the periodic table of elements works! Not only will this website help you review before your exams or tests, but it will also keep you amused with our super lame, <a href="https://what-if.xkcd.com/archive/">XKCD</a>-inspired jokes and comics for you (all by the amazing Yosra Hashim)!</p>
+                        <br>
+                        <h2>What are Atoms?</h2>
+                        <p>Everything is made up of atoms - indivisable, uncreatable (or destroyable) small particles. Atoms contain protons, neutrons and electrons. Protons and neutrons are located in the nucleus of the atom, while the electrons are found in the shells. Protons have positive charges, neutrons have neutral charges, and electrons have negative charges.</p>
+                        <br>
+                        <h2>What is a Shell?</h2>
+                        <p>As explained earlier, electrons are located in the atom's shells. But what are they? Shells are invisible rings around an atom that contain electrons that orbit the nucleus. It is similar to how the planets orbit the sun. The sun would be the nucleus, the planets would be electrons, and the cycle of the planets' orbit would be the shell!</p>
+                        <br>
+                        <h2>More About the Nucleus...</h2>
+                        <p>Rutherford called the positive particles in the nucleus <i>protons</i>. It was later discovered by Rutherford and James Chadwick, that there is another particle with no charge, also in the nucleus, called the <i>neutron</i>.</p>
+                    </div>
+            </div>
+        </div>
+        <br>
+        
+        <div id="footer">
+            <p>Yosra Hashim: Computer Science Portfolio</p>
+        </div>
 
+    </body>
 </html>
+
+ 
