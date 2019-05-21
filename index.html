@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Yosra Hashim: Portfolio</title>
     </head>
-    
     <style>
         body {
             font-family: "Kozuka Gothic Pro";
@@ -15,31 +13,26 @@
             margin: 0;
             margin-top: 10px;
         }
-
         h2 {
             color: #8fc1e2;
         }
-
         #nav {
             text-align: center;
             padding-bottom: 20px;
         }
-
         #nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #5085a5;
-            margin-top: 5px;
+            margin-top: 0px;
         }
-
         #nav li {
             vertical-align: center;
             float: left;
             width: 16.66666666666%;
         }
-
         #nav li a {
             display: block;
             color: white;
@@ -47,44 +40,36 @@
             padding: 3px;
             text-decoration: none;
         }
-
         #nav li a:hover {
             background-color: #8fc1e2;
             color: white;
         }
-
         #nav .active {
             background-color: white;
             color: black;
         }
-
         #footer {
             background-color: #5085a5;
             color: white;
             text-align: center;
             font-size: 100%;
         }
-
         #column1 {
             width: 40%;
             float: left;
             padding-left: 10px;
         }
-
         #column2 {
             width: 57.3%;
             float: right;
             margin-right: 20px;
         }
-
         #content{
-            height:760px;
+            height:500px;
         }
-
         #column1, #column2 {
             height: 100%;
         }
-
         #column1 h2 {
             padding: 0px 10px 0px 10px;
             margin:0px;
@@ -93,45 +78,35 @@
             padding: 0px 10px 0px 10px;
             margin: 0px;
         }
-
         #column1 p {
             font-weight: lighter;
         }
-
         #column2 p {
             font-weight: lighter;
         }
-
         .list li {
             padding-left: 10px;
             width: 100%;
             font-weight: lighter;
         }
-
         .list {
             padding-bottom: 10px;
             height: 170px;
         }
-
         a {
             color: #8fc1e2;
             text-decoration: none;
         }
-
         a:hover {
             color: red;
         }
-
         .construction {
             text-align: center;
         }
-
         .construction img {
             animation: shake 0.5s; 
             animation-iteration-count: infinite; 
         }
-
-
         @keyframes shake {
             0% { transform: translate(1px, 1px) rotate(0deg); }
             10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -145,7 +120,6 @@
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
         }
-
         .flash {
            animation-name: flash;
             animation-duration: 0.2s;
@@ -154,58 +128,48 @@
             animation-direction: alternate;
             animation-play-state: running;
         }
-
         @keyframes flash {
             from {color: red;}
             to {color: black;}
         }
-
         #maincontent {
             animation: fadeEffect 1s;
         }
-
         @keyframes fadeEffect {
             from {opacity: 0;}
             to {opacity: 1;}
         }
-
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 20%;
         }
-
         .center2 {
             display: block;
             margin-left: 20px;
             margin-top: 20px; 
             width: 90%;
         }
-
         .center3 {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
         }
-
         #full {
             display: block;
             width: 100%;
         }
-
         * {box-sizing: border-box;}
         .mySlides {display: none;}
         img {vertical-align: middle;}
-
         /* Slideshow container */
         .slideshow-container {
             max-width: 1000px;
             position: relative;
             margin: auto;
         }
-
         /* The dots/bullets/indicators */
         .dot {
             height: 1px;
@@ -216,7 +180,6 @@
             display: inline-block;
             transition: background-color 0.6s ease;
         }
-
         /* Fading animation */
         .fade {
             -webkit-animation-name: fade;
@@ -224,18 +187,15 @@
             animation-name: fade;
             animation-duration: 1.5s;
         }
-
         @-webkit-keyframes fade {
             from {opacity: .4} 
             to {opacity: 1}
         }
-
         @keyframes fade {
             from {opacity: .4} 
             to {opacity: 1}
         }
     </style>
-
     <body>
         <div id="header">
             <div id="nav">
@@ -246,7 +206,6 @@
                 </ul>
             </div>
         </div>
-        
         <div id="maincontent">
             <div id="content">
                 <div id="column1">
@@ -271,7 +230,6 @@
                         <script>
                         var slideIndex = 0;
                         showSlides();
-
                         function showSlides() {
                             var i;
                             var slides = document.getElementsByClassName("mySlides");
@@ -306,12 +264,8 @@
             </div>
         </div>
         <br>
-        
         <div id="footer">
             <p>Yosra Hashim: Computer Science Portfolio</p>
         </div>
-
     </body>
 </html>
-
- 
