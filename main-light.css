@@ -496,7 +496,7 @@ pre {
 }
 
 .button {
-  background-color: none; 
+  background-color: white; 
   border: none;
   color: black;
   font-family: "Source Code Pro",monospace;
