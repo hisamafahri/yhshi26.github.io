@@ -503,6 +503,11 @@ pre {
   font-size: 12.5px;
 }
 
+.button:hover {
+  color: var(--background-color);
+  background-color: var(--base-color)
+}
+
 /* where things might screw up, testing */
 
 /* cyrillic-ext */
