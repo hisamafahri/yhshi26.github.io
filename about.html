@@ -1,0 +1,122 @@
+<!-- credit to this guy: https://github.com/b2a3e8 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>/About</title>
+		<!-- Begin Jekyll SEO tag v2.6.1 -->
+		<!-- <meta name="generator" content="Jekyll v3.9.0" /> -->
+		<meta property="og:title" content="/" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="description" content="About Yosra Hashim." />
+		<meta property="og:description" content="About Yosra Hashim." />
+		<link rel="canonical" href="https://yhshi26.github.io/page/about/" />
+		<meta property="og:url" content="https://yhshi26.github.io/page/about/" />
+		<meta property="og:site_name" content="yhshi26.github.io" />
+		<script type="application/ld+json">
+			{"@type":"WebSite","headline":"/","url":"https://yhshi26.github.io/page/about/","description":"About Yosra Hashim.","name":"yhshi26.github.io","@context":"https://schema.org"}
+		</script>
+		<!-- End Jekyll SEO tag -->
+		<link rel="stylesheet" type="text/css" href="main-dark.css">
+        <!-- <link rel="stylesheet" href="main-dark.css"> -->
+	</head>
+	<body>
+		<!-- credit to: https://stackoverflow.com/questions/63422702/how-to-switch-between-light-and-dark-mode-with-water-css -->
+		<script>
+			function setTheme(themeName) {
+			  localStorage.setItem('theme', themeName);
+			  //document.documentElement.className = themeName;
+			  var link = document.createElement('link');
+			  link.rel = 'stylesheet';
+			  if (themeName == "theme-dark") {
+				link.href = 'main-dark.css';
+			  } else {
+				link.href = 'main-light.css';
+			  }
+			  document.head.appendChild(link);
+			}
+			// function to toggle between light and dark theme
+			function toggleTheme() {
+			  if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-light');
+			  } else {
+				setTheme('theme-dark');
+			  }
+			}
+			// Immediately invoked function to set the theme on initial load
+			(function() {
+			  if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-dark');
+			  } else {
+				setTheme('theme-light');
+			  }
+			})();
+		</script>
+		<div class="container">
+			<header>
+				<div class="menu">
+					<ul>
+						<li><a href="/page/">/</a></li>
+						<li><a href="/page/about/">/Yosra Hashim</a></li>
+						<li><a href="/page/posts/">/Posts</a></li>
+						<li><a href="/page/resources/">/Resources</a></li>
+						<li><a href = "mailto:yhshi26@gmail.com?subject = Website&body = Message">/Contact</a></li>
+						<li><button id="switch" class="button" onclick="toggleTheme()">Switch</button></li>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<h1 id="welcome">About</h1>
+				<p>I'm Yosra Hashim, a direct-entry medical student studying abroad from Canada. I'm currently in year 2/6 for my program which means we're covering clinical aspects through lectures and dissections.</p>
+        <p>The time I spent in the lab this year (though limited) definitely stood out to me. It was my first time around donated cadavers and surgical tools. I'll probably write more about the experience in a post, but it's safe to say that the time I spent in the lab had a profound impact on me, and I'm more interested than ever in potentially pursuing a surgical career.</p>   
+				<br />  <!-- add line break if there is any content -->
+        <h1>Resources</h1>
+          <h2>Research</h2>
+            <p><b><a href="https://www.cos.io/">Center for Open Science</a><b></p>
+            <p><b><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a><b></p>
+            <p><b><a href="https://www.researchgate.net/">Research Gate</a><b></p>
+            <p><b><a href="https://arxiv.org/archive/cs">Arxiv</a><b></p>
+            <p><b><a href="https://scholar.google.com/">Google Scholar</a><b></p>
+          <h2>Academic tools</h2>
+            <p><b><a href="https://libgen.is/">Library Genesis</a><b></p>
+            <p><b><a href="https://academictree.org/">Academic tree</a><b></p>
+            <p><b><a href="https://www.wolframalpha.com/">Wolfram Alpha</a><b></p>
+            <p><b><a href="https://www.desmos.com/calculator">Desmos</a><b></p>
+            <p><b><a href="https://stackexchange.com/">StackExchange</a><b></p> 
+          <h2>Neuroscience</h2>
+            <p><b><a href="https://openbci.com/">OpenBCI</a><b></p>
+            <p><b><a href="https://neurotechx.com/">NeurotechX</a><b></p>
+            <p><b><a href="http://bnci-horizon-2020.eu/">BNCI Horizon</a><b></p>
+            <p><b><a href="https://www.sfn.org/">Society for Neuroscience</a><b></p>
+            <p><b><a href="https://academy.neuromatch.io/nma2020/course-materials">Neuromatch.io</a><b></p>
+          <h2>Programming</h2>
+            <p><b><a href="https://github.com/">GitHub</a><b></p>
+            <p><b><a href="https://carbon.now.sh/">Carbon</a><b></p>
+            <p><b><a href="https://hackmd.io/">HackMD</a><b></p>              
+          <h2>Interesting people</h2>
+            <p><b><a href="https://shenoy.people.stanford.edu/krishna-shenoy">Krishna Shenoy</a><b></p>
+            <p><b><a href="https://surgery.utoronto.ca/faculty/taufik-valiante">Taufik Valiante</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/veritasium">Veritasium</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/3blue1brown">3blue1brown</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/vsauce1">VSauce</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/NileRed">Nile Red</a><b></p>
+            <p><b><a href="https://www.youtube.com/user/minutephysics">Minute Physics</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/LeiosOS">Leios Labs</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/numberphile">Numberphile</a><b></p>
+            <p><b><a href="https://www.youtube.com/user/Computerphile">Computerphile</a><b></p>
+            <p><b><a href="https://www.youtube.com/c/JPerm">JPerm</a><b></p>
+          <h2>Other nerdy things</h2>
+            <p><b><a href="https://www.youtube.com/channel/UCcAy1o8VUCkdowxRYbc0XRw">Sebi's Random Tech</a><b></p>
+            <p><b><a href="https://koendeschacht.be/blog/">Koen Deschacht's EEG Experiments</a><b></p>
+            <p><b><a href="https://www.decisionproblem.com/paperclips/index2.html">Universal Paperclips</a><b></p>
+            <p><b><a href="https://github.com/b2a3e8/jekyll-theme-console">Jekyll theme (currently using)</a><b></p> 
+			</main>
+			<footer>
+				Take a look at my <a href="https://github.com/yhshi26">GitHub</a>
+			</footer>
+		</div>
+	</body>
+</html>
