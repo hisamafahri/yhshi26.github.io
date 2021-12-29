@@ -482,16 +482,16 @@ pre {
 }
 
 .button {
-  background-color: black;
+  background-color: var(--background-color);
   border: none;
-  color: white;
+  color: var(--text-color);
   font-family: "Source Code Pro",monospace;
   font-size: 12.5px;
 }
 
 .button:hover {
   color: var(--background-color);
-  background-color: var(--base-color)
+  background-color: var(--base-color);
 }
 
 /* where things might screw up, testing */
