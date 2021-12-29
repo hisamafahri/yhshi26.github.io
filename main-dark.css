@@ -482,6 +482,7 @@ pre {
 }
 
 .button {
+  background-color: black;
   border: none;
   color: white;
   font-family: "Source Code Pro",monospace;
