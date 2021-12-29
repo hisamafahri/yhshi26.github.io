@@ -24,6 +24,41 @@
         <!-- <link rel="stylesheet" href="main-dark.css"> -->
 	</head>
 	<body>
+		<!-- credit to: https://stackoverflow.com/questions/63422702/how-to-switch-between-light-and-dark-mode-with-water-css -->
+		<script>
+			function setTheme(themeName) {
+			  localStorage.setItem('theme', themeName);
+
+			  //document.documentElement.className = themeName;
+
+			  var link = document.createElement('link');
+			  link.rel = 'stylesheet';
+			  if (themeName == "theme-dark") {
+				link.href = 'main-dark.css';
+			  } else {
+				link.href = 'main-light.css';
+			  }
+			  document.head.appendChild(link);
+			}
+
+			// function to toggle between light and dark theme
+			function toggleTheme() {
+			  if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-light');
+			  } else {
+				setTheme('theme-dark');
+			  }
+			}
+
+			// Immediately invoked function to set the theme on initial load
+			(function() {
+			  if (localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-dark');
+			  } else {
+				setTheme('theme-light');
+			  }
+			})();
+		</script>
 		<div class="container">
 			<header>
 				<div class="menu">
@@ -32,6 +67,7 @@
 						<li><a href="/page/yosrahashim/">/Yosra Hashim</a></li>
 						<li><a href="/page/about/">/About</a></li>
 						<li><a href="/page/contact/">/Contact</a></li>
+						<li><button id="switch" onclick="toggleTheme()">Switch</button></li>
 					</ul>
 				</div>
 			</header>
